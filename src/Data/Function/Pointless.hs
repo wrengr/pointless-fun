@@ -14,8 +14,7 @@
 module Data.Function.Pointless
     (
     -- * Multicomposition
-    --
-    -- Based on <http://matt.immute.net/content/pointless-fun>.
+    -- | Based on <http://matt.immute.net/content/pointless-fun>.
     -- These combinators allow you to easily modify the types of a
     -- many-argument function with syntax that looks like giving
     -- type signatures. For example,
