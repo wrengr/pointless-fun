@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -Wall -fwarn-tabs #-}
 ----------------------------------------------------------------
---                                                    2011.06.18
+--                                                    2012.01.06
 -- |
 -- Module      :  Data.Function.Pointless
 -- Copyright   :  Copyright (c) 2009--2011 wren ng thornton
@@ -30,7 +30,7 @@ module Data.Function.Pointless
       ($::), (~>), (!~>)
     
     -- * Composition for arity 2
-    , (...), (.^)
+    , (.:), (.^)
     
     -- * Strict composition
     , (.!)
@@ -92,15 +92,19 @@ infixr 2 !~>
 -- | Binary composition: pass two args to the right argument before
 -- composing.
 --
--- > (f ... g) x y = f (g x y)
+-- > (f .: g) x y = f (g x y)
+--
+-- or,
+--
+-- > f .: g = curry (f . uncurry g)
 --
 -- This is the same as the common idiom @(f .) . g@ but more easily
 -- extended to multiple uses, due to the fixity declaration.
 
-(...) :: (c -> d) -> (a -> b -> c) -> (a -> b -> d)
-(...) = (.) . (.)
-{-# INLINE (...) #-}
-infixl 8 ...
+(.:) :: (c -> d) -> (a -> b -> c) -> (a -> b -> d)
+(.:) = (.) . (.)
+{-# INLINE (.:) #-}
+infixl 8 .:
 
 
 -- | Secondary composition: compose the right argument on the second
@@ -109,7 +113,7 @@ infixl 8 ...
 -- > (f .^ g) x y = f x (g y)
 
 (.^) :: (a -> c -> d) -> (b -> c) -> (a -> b -> d)
-(.^) = flip ... (.) . flip
+(.^) = flip .: (.) . flip
 {-# INLINE (.^) #-}
 infix 9 .^
 
@@ -134,7 +138,7 @@ infixr 9 .!
 -- For some reason this definition is significantly faster than the
 -- pointful version in the documentation. Even after INLINE. Who knew?
 --
--- cf vs @($!) ... (.)@ == @\f g x -> f . g $! x@ which stictifies
+-- cf vs @($!) .: (.)@ == @\f g x -> f . g $! x@ which stictifies
 -- the first argument of RH-function. However, this doesn't behave
 -- the way you may think it should; i.e., it isn't compositional
 -- in the way you think it should be.
