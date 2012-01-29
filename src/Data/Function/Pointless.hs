@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -Wall -fwarn-tabs #-}
 ----------------------------------------------------------------
---                                                    2012.01.06
+--                                                    2012.01.29
 -- |
 -- Module      :  Data.Function.Pointless
 -- Copyright   :  Copyright (c) 2009--2012 wren ng thornton
@@ -21,8 +21,8 @@ module Data.Function.Pointless
     --
     -- > foo    :: A -> B -> C
     -- >
-    -- > albert :: A -> X
-    -- > beth   :: B -> Y
+    -- > albert :: X -> A
+    -- > beth   :: Y -> B
     -- > carol  :: C -> Z
     -- > 
     -- > bar :: X -> Y -> Z

@@ -1,9 +1,9 @@
 ----------------------------------------------------------------
--- wren ng thornton <wren@community.haskell.org>    ~ 2012.01.06
+-- wren ng thornton <wren@community.haskell.org>    ~ 2012.01.28
 ----------------------------------------------------------------
 
 Name:           pointless-fun
-Version:        1.1.0
+Version:        1.1.0.1
 Stability:      provisional
 Homepage:       http://code.haskell.org/~wren/
 Author:         wren ng thornton
