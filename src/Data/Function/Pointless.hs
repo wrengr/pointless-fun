@@ -3,7 +3,7 @@
 --                                                    2012.01.29
 -- |
 -- Module      :  Data.Function.Pointless
--- Copyright   :  Copyright (c) 2009--2012 wren ng thornton
+-- Copyright   :  Copyright (c) 2009--2012 wren gayle romano
 -- License     :  BSD
 -- Maintainer  :  wren@community.haskell.org
 -- Stability   :  provisional
