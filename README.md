@@ -1,9 +1,8 @@
 pointless-fun
 =============
 [![Hackage version](https://img.shields.io/hackage/v/pointless-fun.svg?style=flat)](https://hackage.haskell.org/package/pointless-fun) 
-[![Hackage-Deps](https://img.shields.io/hackage-deps/v/pointless-fun.svg?style=flat)](http://packdeps.haskellers.com/specific?package=pointless-fun)
-[![TravisCI Build Status](https://img.shields.io/travis/wrengr/pointless-fun.svg?style=flat)](https://travis-ci.org/wrengr/pointless-fun) 
-[![CircleCI Build Status](https://circleci.com/gh/wrengr/pointless-fun.svg?style=shield&circle-token=b57517657c556be6fd8fca92b843f9e4cffaf8d1)](https://circleci.com/gh/wrengr/pointless-fun)
+[![Build Status](https://github.com/wrengr/pointless-fun/workflows/ci/badge.svg)](https://github.com/wrengr/pointless-fun/actions?query=workflow%3Aci)
+[![Dependencies](https://img.shields.io/hackage-deps/v/pointless-fun.svg?style=flat)](http://packdeps.haskellers.com/specific?package=pointless-fun)
 
 Some common point-free combinators. Including strict composition,
 and type-signature-like combinators for coercing inputs and outputs
@@ -43,11 +42,8 @@ It is fully Haskell98 compliant.
 
 ## Links
 
-* [Website](http://cl.indiana.edu/~wren/)
+* [Website](http://wrengr.org/)
 * [Blog](http://winterkoninkje.dreamwidth.org/)
 * [Twitter](https://twitter.com/wrengr)
 * [Hackage](http://hackage.haskell.org/package/pointless-fun)
-* [Darcs](http://code.haskell.org/~wren/pointless-fun)
-* [GitHub (clone)](https://github.com/wrengr/pointless-fun)
-* [Haddock (Darcs version)
-    ](http://code.haskell.org/~wren/pointless-fun/dist/doc/html/pointless-fun)
+* [GitHub](https://github.com/wrengr/pointless-fun)

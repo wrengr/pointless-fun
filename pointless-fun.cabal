@@ -1,19 +1,18 @@
 ----------------------------------------------------------------
--- wren gayle romano <wren@community.haskell.org>   ~ 2015.05.30
+-- wren gayle romano <wren@community.haskell.org>   ~ 2021.10.16
 ----------------------------------------------------------------
 
--- By and large Cabal >=1.2 is fine; but >= 1.6 gives tested-with:
--- and source-repository:.
-Cabal-Version:  >= 1.6
+-- Cabal >=1.10 is required by Hackage.
+Cabal-Version:  >= 1.10
 Build-Type:     Simple
 
 Name:           pointless-fun
-Version:        1.1.0.6
+Version:        1.1.0.7
 Stability:      provisional
-Homepage:       http://code.haskell.org/~wren/
+Homepage:       http://wrengr.org
 Author:         wren gayle romano, Matt Hellige
-Maintainer:     wren@community.haskell.org
-Copyright:      Copyright (c) 2009--2015 wren gayle romano
+Maintainer:     wren@cpan.org
+Copyright:      Copyright (c) 2009--2021 wren gayle romano
 License:        BSD3
 License-File:   LICENSE
 
@@ -21,13 +20,24 @@ Category:       Combinators, Composition, Utils
 Synopsis:       Some common point-free combinators.
 Description:    Some common point-free combinators.
 
-Tested-With:
-    GHC ==6.12.1, GHC ==6.12.3, GHC ==7.6.1, GHC ==7.8.0
 Extra-source-files:
-    README, CHANGELOG
+    README.md, CHANGELOG
+
+-- This should work as far back as GHC 6.12.1, but we don't verify that by CI.
+-- <https://github.com/wrengr/pointless-fun/actions?query=workflow%3Aci>
+Tested-With:
+    GHC ==8.0.2,
+    GHC ==8.2.2,
+    GHC ==8.4.4,
+    GHC ==8.6.5,
+    GHC ==8.8.4,
+    GHC ==8.10.3,
+    GHC ==9.0.1
+
+----------------------------------------------------------------
 Source-Repository head
-    Type:     darcs
-    Location: http://community.haskell.org/~wren/pointless-fun
+    Type:     git
+    Location: https://github.com/wrengr/pointless-fun.git
 
 ----------------------------------------------------------------
 Flag base4
@@ -41,6 +51,7 @@ Flag base4
 
 ----------------------------------------------------------------
 Library
+    Default-Language: Haskell2010
     Hs-Source-Dirs:  src
     Exposed-Modules: Data.Function.Pointless
     

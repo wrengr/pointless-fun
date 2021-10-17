@@ -1,3 +1,5 @@
+1.1.0.7 (2021-10-16):
+    - Started GithubActions for CI
 1.1.0.6 (2015-05-30):
     - Moved VERSION to CHANGELOG
 1.1.0.1 (2012-01-28):
