@@ -1,11 +1,11 @@
 {-# OPTIONS_GHC -Wall -fwarn-tabs #-}
 ----------------------------------------------------------------
---                                                    2012.01.29
+--                                                    2021.10.17
 -- |
 -- Module      :  Data.Function.Pointless
--- Copyright   :  Copyright (c) 2009--2015 wren gayle romano
+-- Copyright   :  Copyright (c) 2009--2021 wren gayle romano
 -- License     :  BSD
--- Maintainer  :  wren@community.haskell.org
+-- Maintainer  :  wren@cpan.org
 -- Stability   :  provisional
 -- Portability :  Haskell98
 --
@@ -24,14 +24,14 @@ module Data.Function.Pointless
     -- > albert :: X -> A
     -- > beth   :: Y -> B
     -- > carol  :: C -> Z
-    -- > 
+    -- >
     -- > bar :: X -> Y -> Z
     -- > bar = foo $:: albert ~> beth ~> carol
       ($::), (~>), (!~>)
-    
+
     -- * Composition for arity 2
     , (.:), (.^)
-    
+
     -- * Strict composition
     , (.!)
     ) where
