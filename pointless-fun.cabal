@@ -6,11 +6,11 @@ Cabal-Version:  2.2
 --    <https://github.com/haskell/cabal/issues/4899>
 
 ----------------------------------------------------------------
--- wren gayle romano <wren@cpan.org>                ~ 2022.08.28
+-- wren gayle romano <wren@cpan.org>                ~ 2023.03.19
 ----------------------------------------------------------------
 
 Name:           pointless-fun
-Version:        1.1.0.10
+Version:        1.1.0.11
 Build-Type:     Simple
 Stability:      provisional
 Homepage:       https://wrengr.org/software/hackage.html
@@ -40,7 +40,8 @@ Tested-With:
     GHC ==8.10.3,
     GHC ==9.0.1,
     GHC ==9.2.4,
-    GHC ==9.4.1
+    GHC ==9.4.4,
+    GHC ==9.6.1
 
 ----------------------------------------------------------------
 Source-Repository head
