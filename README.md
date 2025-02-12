@@ -1,8 +1,9 @@
 pointless-fun
 =============
+[![CI Status](https://github.com/wrengr/pointless-fun/actions/workflows/ci.yml/badge.svg)](https://github.com/wrengr/pointless-fun/actions?query=workflow%3Aci+-event%3Apull_request)
 [![Hackage version](https://img.shields.io/hackage/v/pointless-fun.svg?style=flat)](https://hackage.haskell.org/package/pointless-fun) 
-[![Build Status](https://github.com/wrengr/pointless-fun/workflows/ci/badge.svg)](https://github.com/wrengr/pointless-fun/actions?query=workflow%3Aci)
-[![Dependencies](https://img.shields.io/hackage-deps/v/pointless-fun.svg?style=flat)](http://packdeps.haskellers.com/specific?package=pointless-fun)
+[![Stackage LTS version](https://stackage.org/package/pointless-fun/badge/lts)](https://stackage.org/lts/package/pointless-fun)
+[![Stackage Nightly version](https://stackage.org/package/pointless-fun/badge/nightly)](https://stackage.org/nightly/package/pointless-fun)
 
 Some common point-free combinators. Including strict composition,
 and type-signature-like combinators for coercing inputs and outputs
